@@ -1,0 +1,13 @@
+{
+  "extends": [ "tslint-config-airbnb"],
+  "linterOptions": {
+    "exclude": [
+    ]
+  },
+  "rules": {
+    "interface-over-type-literal": false,
+    "no-floating-promises": true,
+    "indent": [true, "spaces"],
+    "semicolon": [true, "always"]
+  }
+}
