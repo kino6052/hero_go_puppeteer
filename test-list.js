@@ -4,7 +4,7 @@
  */
 
 const sprint009 = [
-  // "RBNGO-134-503-response (bugfix)",
+  "RBNGO-134-503-response (bugfix)",
   "RBNGO-205-land-on-edit (bugfix)"
 ];
 
@@ -13,7 +13,7 @@ const general = [
 ];
 
 module.exports = [
-  // ...general,
+  ...general,
   ...sprint009
 ];
 
