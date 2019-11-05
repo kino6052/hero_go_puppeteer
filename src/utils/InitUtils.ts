@@ -1,11 +1,12 @@
 import * as path from 'path';
 import * as puppeteer from 'puppeteer';
+import { heroGoPath } from '../../test-list';
 
 let browser: puppeteer.Browser;
 
 export const initUtils = {
   init: async () => {
-    const pathToExtension = path.join(__dirname, '../../hero_go');
+    const pathToExtension = path.join(__dirname, '../..', heroGoPath);
     browser = await puppeteer.launch({
       headless: false,
       args: [

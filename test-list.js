@@ -15,3 +15,5 @@ module.exports = [
     ...general,
     ...sprint009
 ];
+
+module.exports.heroGoPath = './hero_go';
