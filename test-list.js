@@ -4,16 +4,17 @@
  */
 
 const sprint009 = [
-    "RBNGO-134-503-response (bugfix)"
+  // "RBNGO-134-503-response (bugfix)",
+  "RBNGO-205-land-on-edit (bugfix)"
 ];
 
 const general = [
-    "login"
+  "login"
 ];
 
 module.exports = [
-    ...general,
-    ...sprint009
+  // ...general,
+  ...sprint009
 ];
 
 module.exports.heroGoPath = './hero_go';
