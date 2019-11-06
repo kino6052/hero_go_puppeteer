@@ -2,7 +2,7 @@ import { Page } from 'puppeteer';
 import { utils } from '.';
 
 export const KEBAP_MENU_XPATH = '//*[@id="root"]/div[1]/div/div[1]/div[1]/div[2]/button';
-export const MENU_OPTION_DELETE_XPATH = '/html/body/div[4]/div[2]/ul/li[6]';
+export const MENU_OPTION_DELETE_XPATH = '/html/body/div[2]/div[2]/ul/li[5]';
 export const BUTTON_CONTAINER_PATH = '//*[@id="root"]/div[1]/div/div[1]/div[2]/div';
 
 export const automationUtils = {

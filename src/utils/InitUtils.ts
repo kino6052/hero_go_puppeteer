@@ -7,6 +7,7 @@ let browser: puppeteer.Browser;
 export const initUtils = {
   init: async () => {
     const pathToExtension = path.join(__dirname, '../..', heroGoPath);
+    console.warn('Path to Puppeteer', pathToExtension);
     browser = await puppeteer.launch({
       headless: false,
       args: [

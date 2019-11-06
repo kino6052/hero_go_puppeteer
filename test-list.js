@@ -10,7 +10,9 @@ const sprint009 = [
 ];
 
 const general = [
-  "login"
+  "login",
+  "get-automations-fail",
+  "get-actions-fail"
 ];
 
 module.exports = [

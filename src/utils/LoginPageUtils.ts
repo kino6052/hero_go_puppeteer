@@ -11,6 +11,10 @@ const DEFAULT_USERNAME = 'admin';
 const DEFAULT_PASSWORD = 'secret';
 
 export const loginPageUtils = {
+  isOn: async (page: Page) => {
+    const loginButton = await utils.getElementByPath(page)(LOGIN_BUTTON_XPATH);
+    return !!loginButton;
+  },
   clickLoginButton: async (page: Page) => {
     await utils.click(page)(LOGIN_BUTTON_XPATH);
   },
