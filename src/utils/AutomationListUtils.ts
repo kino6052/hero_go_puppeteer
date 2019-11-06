@@ -10,7 +10,7 @@ export const automationListUtils = {
   createAutomation: (page: Page) => async (name: string) => {
     await utils.click(page)(CREATE_NEW_BUTTON_XPATH);
     await utils.sleep(2);
-    await utils.findInputAndType(page)(CREATE_NEW_INPUT_XPATH, name);
+    await utils.findInputAndType(page)(CREATE_NEW_INPUT_XPATH, `${name} - puppeteer`);
     await utils.sleep(2);
     await utils.click(page)(CREATE_NEW_SUBMIT_XPATH);
     await utils.sleep(2);
