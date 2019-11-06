@@ -1,7 +1,6 @@
 # Cucumber Tests for Hero_Go
 
 ## Quick Start
-
 1. Install all the dependencies running following command:
 ```
 yarn
@@ -12,8 +11,7 @@ yarn
 yarn test
 ```
 
-# Folder Structure
-
+## Folder Structure
 ```
 hero_go_puppeteer/
 ├── src/
@@ -28,7 +26,11 @@ hero_go_puppeteer/
 ```
 
 In order to create tests you will need to add them to the `specs` folder.
+
 Each test contains *features* and *step-definitions*.
+
 Features are files written in `gherkin`.
+
 Step Definitions are the actual `jest` tests.
+
 Utils are just structured auxillary functions.
