@@ -16,7 +16,7 @@ defineFeature(feature, (test) => {
 
     given('We are logged in', async () => {
       page = await initUtils.init();
-      await loginPageUtils.defaultLogin(page)();
+      await loginPageUtils.defaultLogin(page);
       await utils.sleep(2);
     });
 

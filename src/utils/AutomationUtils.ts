@@ -10,7 +10,7 @@ export const automationUtils = {
   clickOnKebapMenu: (page: Page) => async () => {
     await utils.click(page)(KEBAP_MENU_XPATH);
   },
-  openMenuAndClickOnDelete: (page: Page) => async () => {
+  openMenuAndClickOnDelete: async (page: Page) => {
     await utils.click(page)(KEBAP_MENU_XPATH);
     await utils.sleep(2);
     const option = (await page.$x(MENU_OPTION_DELETE_XPATH))[0];
@@ -19,7 +19,7 @@ export const automationUtils = {
     await utils.click(page)(MENU_OPTION_DELETE_XPATH);
     await utils.sleep(2);
   },
-  isEditMode: (page: Page) => async () => {
+  isEditMode: async (page: Page) => {
     const buttonContainer =  (await page.$x(BUTTON_CONTAINER_PATH))[0];
     return buttonContainer.evaluate(e => e.childNodes.length === 3); // Should Contain 3 Buttons
   },

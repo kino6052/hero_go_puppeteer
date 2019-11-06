@@ -21,9 +21,12 @@ export const loginPageUtils = {
     await utils.findInputAndType(page)(USERNAME_INPUT_XPATH, username);
     await utils.findInputAndType(page)(PASSWORD_INPUT_XPATH, password);
   },
-  defaultLogin: (page: Page) => async () => {
+  enterDefaultLoginInfo: async (page: Page) => {
     await loginPageUtils.enterUsernameAndPassword(page)(DEFAULT_USERNAME, DEFAULT_PASSWORD);
     await loginPageUtils.enterURL(page)(DEFAULT_URL);
+  },
+  defaultLogin: async (page: Page) => {
+    await loginPageUtils.enterDefaultLoginInfo(page);
     await loginPageUtils.clickLoginButton(page);
   },
 };

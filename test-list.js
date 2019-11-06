@@ -5,7 +5,8 @@
 
 const sprint009 = [
   "RBNGO-134-503-response (bugfix)",
-  "RBNGO-205-land-on-edit (bugfix)"
+  "RBNGO-205-land-on-edit (bugfix)",
+  "RBNGO-207-pressing-enter-login"
 ];
 
 const general = [
